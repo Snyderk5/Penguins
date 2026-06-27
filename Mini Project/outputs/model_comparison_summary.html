@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Model Comparison Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Model Comparison Summary</h2>
+    <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Model</th>
+      <th>Mean CV Accuracy</th>
+      <th>CV Standard Deviation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model 1: Measurements Only</td>
+      <td>0.9883</td>
+      <td>0.0058</td>
+    </tr>
+    <tr>
+      <td>Model 2: Measurements + Island</td>
+      <td>0.9942</td>
+      <td>0.0071</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
